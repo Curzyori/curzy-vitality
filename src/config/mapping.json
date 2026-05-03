@@ -1,0 +1,5 @@
+{
+  "development": [".*code.*", ".*antigravity.*", ".*terminal.*", ".*bash.*", ".*node.*", ".*python.*"],
+  "entertainment": [".*spotify.*", ".*chrome.*", ".*firefox.*", ".*vlc.*", ".*steam.*"],
+  "utility": [".*gnome-terminal.*", ".*nautilus.*", ".*explorer.*", ".*system-settings.*"]
+}
