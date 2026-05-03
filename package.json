@@ -1,0 +1,23 @@
+{
+  "name": "curzy-vitality-sentinel",
+  "version": "1.0.0",
+  "description": "High-performance background activity tracker for Curzy Vitality",
+  "main": "src/server/index.js",
+  "scripts": {
+    "start": "node src/server/index.js",
+    "dev:sentinel": "node --watch src/server/index.js",
+    "dev:dashboard": "cd curzy-vitality && npm run dev",
+    "dev": "concurrently \"npm run dev:sentinel\" \"npm run dev:dashboard\"",
+    "postinstall": "cd curzy-vitality && npm install"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "systeminformation": "^5.23.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
